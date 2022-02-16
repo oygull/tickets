@@ -11,6 +11,8 @@ body {
   flex-direction: column;
   background-color: #dae2f3;
   color: #727a8d;
+  width: 100vw;
+  height: 100vh;
 }
 .bg-content{
   position: fixed;
@@ -29,7 +31,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #7074af;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 .tickets__logo span{
@@ -59,7 +61,7 @@ body {
   font-size: 18px;
 }
 .plane__title{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: #7074af;
 }
@@ -149,6 +151,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 10px;
 }
+
 .card__p{
   font-size: 12px;
   color: #99989e;
@@ -184,5 +187,8 @@ body {
   background-color: #e57c73;
 }
 .american-img{
-  height: 120px;
+  height: 70px;
+}
+.tickets__result{
+  padding: 30px 60px !important;
 }
