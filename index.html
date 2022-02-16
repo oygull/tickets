@@ -19,7 +19,7 @@
   <section class="tickets">
     <div class="container">
       <div class="tickets__inner row">
-        <section class="tickets__tab col-xs-12 col-md-5 my-5">
+        <section class="tickets__tab col-xs-12 col-md-4 my-3">
           <a href="#" class="tickets__logo py-4 px-4">Tickets <span class="pe-2">4U</span></a>
           <ul class="nav nav-pills d-flex justify-content-between" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -38,42 +38,226 @@
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active plane px-4" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <p class="plane__text mb-1 mt-4">Best flight deals with</p>
-              <h3 class="plane__title">Tickets4U</h3>
+              <h3 class="plane__title mb-3">Tickets4U</h3>
               <form class="plane__form">
                   <fieldset>
                     <div class="mb-3">
-                      <label for="TextInput" class="form-label tab__label mb-1">Depart from</label>
+                      <label for="TextInput" class="form-label tab__label mb-2">Depart from</label>
                       <div class="d-flex tabs__input">
                         <i class='bx bxs-plane-alt mt-2 ms-2'></i>
-                        <input type="text" id="extInput" class="form-control" placeholder="London-All Airports,England,UK">
+                        <input type="text" id="extInput" class="form-control py-2" placeholder="London-All Airports,England,UK">
                       </div>
                      
                     </div>
                     <div class="mb-3">
-                      <label for="TextInput" class="form-label tab__label mb-1">Arrive at</label>
-                      <input type="text" id="TextInput" class="form-control" placeholder="New York-All Airports,New York,USA">
-                    </div>
-                    <div class="mb-3">
-                      <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                      <select id="disabledSelect" class="form-select">
-                        <option>Disabled select</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                        <label class="form-check-label" for="disabledFieldsetCheck">
-                          Can't check this
-                        </label>
+                      <label for="TextInput" class="form-label tab__label mb-2">Arrive at</label>
+                      <div class="d-flex tabs__input">
+                        <i class='bx bxs-plane-alt mt-2 ms-2'></i>
+                        <input type="text" id="TextInput" class="form-control py-2" placeholder="New York-All Airports,New York,USA">
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="mb-3 d-flex">
+                      <div class="me-2 class-select">
+                        <label for="select" class="form-label tab__label mb-2">Class</label>
+                        <div class="d-flex tabs__input">
+                          <span><i class='bx bxs-diamond' ></i></span>
+                          <select id="select" class="form-select py-2">
+                            <option>Economy</option>
+                          </select>
+                        </div>
+                      </div>
+                     <div>
+                      <label for="select" class="form-label tab__label mb-2">Passangers</label>
+                      <div class="d-flex tabs__input">
+                        <i class='bx bxs-user mt-1 ms-2' ></i>
+                        <select id="select" class="form-select">
+                          <option>2</option>
+                        </select>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="mb-3 d-flex">
+                      <div class="pe-3">
+                        <label for="exampleInput" class="form-label tab__label mb-2">Departure Date</label>
+                        <div class="d-flex tabs__input">
+                          <span class="ms-2"><i class='bx bx-calendar' ></i></span>
+                          <input type="text" class="form-control" id="exampleInput">
+                        </div>
+                      </div>
+                      <div>
+                        <label for="exampleInput" class="form-label tab__label mb-2">Return Date</label>
+                        <div class="d-flex tabs__input">
+                          <span class="ms-2"><i class='bx bx-calendar' ></i></span>
+                          <input type="text" class="form-control" id="exampleInput">
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary form__btn mb-5 mt-3 py-2">Find flight</button>
                   </fieldset>
               </form>
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
           </div>
+        </section>
+        <section class="tickets__result col-xs-12 col-md-8 my-3 p-4">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h3 class="result__title mb-1">Search Result</h3>
+              <p class="result__text">We found 15 results</p>
+            </div>
+            <ul class="nav">
+              <li class="nav-item me-4">
+                <a class="nav-link result__link" href="#">Cheapest</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link result__link" href="#">Shortest</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link result__link active" href="#">Recomended</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tickets__direction d-flex">
+            <p class="tickets__place me-3">London</p>
+            <span class="mt-1"><i class='bx bx-right-arrow-alt me-3' ></i></span>
+            <p class="tickets__place">New York</p>
+          </div>
+
+          <div class="card__box row">
+            <div class="card px-4 col-xs-12 mb-2" style="width: 18rem;">
+              <img src="images/british.jpeg" class="card-img-top me-5" alt="card-img">
+              <div class="card-body d-flex">
+                <div class="me-3">
+                  <p class="card__p  mt-0 mb-0">Depart</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="card__stops mt-3 ms-5 me-5">
+                  <p class="stops__p mb-1 ms-3">0 Stops</p>
+                  <p class="card__p">8 hours 45 minutes</p>
+                </div>
+                <div class="me-5">
+                  <p class="card__p  mt-0 mb-0">Arrive</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="price ms-4">
+                  <p class="card__p mb-0">Price</p>
+                  <p class="card__price mt-0">$ 856</p>
+                </div>
+              </div>
+            </div>
+            <div class="card px-4 col-xs-12 mb-2" style="width: 18rem;">
+              <img src="images/wizz.png" class="card-img-top me-5 mt-3 wizz-img" alt="card-img">
+              <div class="card-body d-flex">
+                <div class="me-3">
+                  <p class="card__p  mt-0 mb-0">Depart</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="card__stops mt-3 ms-5 me-5">
+                  <p class="stops__p mb-1 ms-3">0 Stops</p>
+                  <p class="card__p">8 hours 45 minutes</p>
+                </div>
+                <div class="me-5">
+                  <p class="card__p  mt-0 mb-0">Arrive</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="price ms-4">
+                  <p class="card__p mb-0">Price</p>
+                  <p class="card__price mt-0">$ 856</p>
+                </div>
+              </div>
+            </div>
+            <div class="card px-4 col-xs-12 mb-2" style="width: 18rem;">
+              <img src="images/british.jpeg" class="card-img-top me-5" alt="card-img">
+              <div class="card-body d-flex">
+                <div class="me-3">
+                  <p class="card__p  mt-0 mb-0">Depart</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="card__stops mt-3 ms-5 me-5">
+                  <p class="stops__p red-stop mb-1 ms-3">0 Stops</p>
+                  <p class="card__p">8 hours 45 minutes</p>
+                </div>
+                <div class="me-5">
+                  <p class="card__p  mt-0 mb-0">Arrive</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="price ms-4">
+                  <p class="card__p mb-0">Price</p>
+                  <p class="card__price mt-0">$ 856</p>
+                </div>
+              </div>
+            </div>
+            <div class="card px-4 col-xs-12 mb-2" style="width: 18rem;">
+              <img src="images/wizz.png" class="card-img-top me-5 mt-3 wizz-img" alt="card-img">
+              <div class="card-body d-flex">
+                <div class="me-3">
+                  <p class="card__p  mt-0 mb-0">Depart</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="card__stops mt-3 ms-5 me-5">
+                  <p class="stops__p mb-1 ms-3">0 Stops</p>
+                  <p class="card__p">8 hours 45 minutes</p>
+                </div>
+                <div class="me-5">
+                  <p class="card__p  mt-0 mb-0">Arrive</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="price ms-4">
+                  <p class="card__p mb-0">Price</p>
+                  <p class="card__price mt-0">$ 856</p>
+                </div>
+              </div>
+            </div>
+            <div class="card px-4 col-xs-12 mb-2" style="width: 18rem;">
+              <img src="images/american.png" class="card-img-top me-5 american-img" alt="card-img">
+              <div class="card-body d-flex">
+                <div class="me-3">
+                  <p class="card__p  mt-0 mb-0">Depart</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="card__stops mt-3 ms-5 me-5">
+                  <p class="stops__p mb-1 ms-3">0 Stops</p>
+                  <p class="card__p">8 hours 45 minutes</p>
+                </div>
+                <div class="me-5">
+                  <p class="card__p  mt-0 mb-0">Arrive</p>
+                  <p class="card__date mt-0 mb-0">11/11/2019</p>
+                  <p class="card__time mt-1">7:34 PM</p>
+                </div>
+                <div class="price ms-4">
+                  <p class="card__p mb-0">Price</p>
+                  <p class="card__price mt-0">$ 856</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination mt-3">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item "><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </section>
       </div>
     </div>
