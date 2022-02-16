@@ -192,3 +192,114 @@ body {
 .tickets__result{
   padding: 30px 60px !important;
 }
+@media screen and (max-width:1200px){
+  .card{
+    height: 200px;
+  }
+  .card-body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+   }
+   .card__stops{
+    margin: 0 !important;
+  }
+  .card-body .me-5{
+    margin-right: 0 !important;
+  }
+  .british__logo{
+    height: 140px;
+  }
+  .card-img-top{
+    margin-right: 0 !important;
+  }
+  .card__price{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:992px){
+  .card{
+    height: 230px;
+  }
+  .card-body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+   }
+   .card__stops{
+    margin: 0 !important;
+  }
+  .card-body .me-5{
+    margin-right: 0 !important;
+  }
+  .british__logo{
+    height: 140px;
+  }
+  .card-img-top{
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width:768px) {
+  .bg-content{
+    display: none;
+  }
+  .card-body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    height: 250px;
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+   }
+   .card__stops{
+    margin: 0 !important;
+  }
+  .card-body .me-5{
+    margin-right: 0 !important;
+  }
+  .british__logo{
+    height: 140px;
+  }
+  .card-img-top{
+    margin-right: 0 !important;
+  }
+ 
+ 
+  .result__title{
+    font-size: 16px;
+  }
+  .result__link{
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:576px) {
+  .price{
+    display: none;
+  }
+  .card{
+    height: 270px;
+  }
+  .card__stops{
+    margin: 0 !important;
+  }
+  .card-body .me-5{
+    margin-right: 0 !important;
+  }
+  .british__logo{
+    height: 140px;
+  }
+  .pagination{
+   display: flex;
+   justify-content: center;
+  }
+}
